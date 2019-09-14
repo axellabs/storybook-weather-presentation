@@ -4,11 +4,11 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<title>reveal.js</title>
+		<title>Testing React Components with Storybook</title>
 
 		<link rel="stylesheet" href="css/reset.css">
 		<link rel="stylesheet" href="css/reveal.css">
-		<link rel="stylesheet" href="css/theme/black.css">
+		<link rel="stylesheet" href="css/theme/axel.css">
 
 		<!-- Theme used for syntax highlighting of code -->
 		<link rel="stylesheet" href="lib/css/monokai.css">
@@ -25,8 +25,118 @@
 	<body>
 		<div class="reveal">
 			<div class="slides">
-				<section>Testing React Components with Storybook</section>
-				<section>hello world</section>
+				<section>
+					<h1>Testing React Components with Storybook.js</h1>
+					<p>by Axel Simms</p>
+				</section>
+				<section>
+					<h1>What Is Storybook.js?</h1>
+					<p> a UI development tool for designing and developing
+						components in an isolated environment (outside of your app)</p>
+				</section>
+				<section>
+					<h1>Helpful Features</h1>
+					<p>
+						<ul>
+							<li>Act as a living style guide: a source of truth for components that updates with your code</li>
+						  <li>Test different cases without manipulating your entire app</li>
+						  <li>Visually inspect components across browsers + operating systems in one place</li>
+						</ul>
+					</p>
+				</section>
+
+				<section>
+					<section>
+						<h1>Development Processes</h1>
+					</section>
+
+					<section>
+						<h2>Test Driven Development (TDD)</h2>
+						<p>Converting requirements into tests and ensuring that those tests pass</p>
+					</section>
+					<section>
+						<h2>Behavior Driven Development (BDD)</h2>
+						<p>an evolution of TDD, still relies on software passing
+							certain tests, but testing is focused on the end behavior
+							of the system from the users' perspective</p>
+					</section>
+					<section>
+						<h2>Component Driven Development (CDD)</h2>
+						<p>
+							<ul>
+								<li>development is focused on building components and
+									composing them into larger structures</li>
+								<li>Influenced by Atomic Design (Brad Frost)</li>
+							</ul>
+						</p>
+					</section>
+					<section>
+						<h2>Storybook Driven Development (SDD)</h2>
+						<p>
+							<ul>
+								<li>Also known as style guide driven development</li>
+								<li>A mix of CDD and TDD, writing stories as tests and visually
+									 inspecting as we go, while preventing regressions with
+									 automated visual testing</li>
+							</ul>
+						</p>
+					</section>
+				</section>
+
+				<section>
+					[live]
+				</section>
+
+				<section>
+					<section>
+						<h1>UI Testing</h1>
+					</section>
+
+					<section>
+						<h2>Structural Testing</h2>
+						<p>
+							<ul>
+								<li>Storyshots addon</li>
+							</ul>
+						</p>
+						<p>* Can be used for visual regression testing, but only with
+						inline code</p>
+					</section>
+					<section>
+						<h2>Interaction Testing</h2>
+						<p>
+							<ul>
+								<li>Storybook actions</li>
+								<li>Enzyme</li>
+								<li>specs</li>
+							</ul>
+						</p>
+					</section>
+					<section>
+						<h2>Automated Visual Regression Testing</h2>
+						<p>
+							<ul>
+								<li>Loki</li>
+								<li>BackstopJS</li>
+							</ul>
+						</p>
+					</section>
+				</section>
+
+				<section>
+					[live]
+				</section>
+
+				<section>
+					<h1>Resources</h1>
+					<p>
+						<ul>
+							<li>https://github.com/hakimel/reveal.js</li>
+							<li>https://github.com/component-driven/awesome-list</li>
+						</ul>
+					</p>
+
+				</section>
 			</div>
 		</div>
 
